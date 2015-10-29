@@ -18,14 +18,11 @@ our ebuilds available.
 
 # With layman
 
-Add `https://raw.github.com/sandrain/mimi-overlay/master/repositories.xml`
-to overlays section in `/etc/layman/layman.cfg`.
-
-Or read the instructions on the
+Read the instructions on the
 [Gentoo Wiki](http://wiki.gentoo.org/wiki/Layman#Adding_custom_overlays),
 then invoke the following:
 
-	layman -f -a mimi-overlay
+	layman -o https://raw.githubusercontent.com/sandrain/mimi-overlay/master/repositories.xml -f -a mimi-overlay
 
 After performing those steps, the following should work (or any other package
 from this overlay):
